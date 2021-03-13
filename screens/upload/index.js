@@ -13,7 +13,7 @@ export default class Upload extends React.Component {
         return (
             <>
                 <SafeAreaView style={styles.container}>
-                    <Button
+                    <Button color='#30475e'
                         title="Select Document"
                         onPress={()=>this._pickDocument(navigation)}
                     />
@@ -26,8 +26,11 @@ export default class Upload extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#dddddd',
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    selectDoc:{
+        color:'#000',
     },
 });

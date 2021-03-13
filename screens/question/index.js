@@ -7,10 +7,10 @@ const Question = ({navigation}) =>{
     return (
         <>
            <SafeAreaView style={styles.container}>
-               <TextInput style={styles.tInput} placeholder={'Enter the Question'} autoCorrect={true}  onChangeText={text => setText(text)}></TextInput>
-               <Button
+               <TextInput style={styles.tInput} multiline={true} placeholder={'Enter the Question'}  autoCorrect={true}  onChangeText={text => setText(text)}></TextInput>
+               <Button color={'#30475e'}
                         title="Submit"
-                        onPress={()=>navigation.navigate('Answer', {que: {text}, ans: "HEY THIS IS THE ANS"})} 
+                        onPress={()=>navigation.navigate('Answer', {que: {text}, ans: "tanda tanda daa"})} 
                     />
            </SafeAreaView>
         </>
@@ -21,16 +21,18 @@ const Question = ({navigation}) =>{
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#dddddd',
       alignItems: 'center',
       justifyContent: 'center',
     },
     tInput:{
-        borderWidth: 2,
-        width: 200,
+        borderWidth: 1,
+        borderRadius: 20,
+        width: 300,
         padding: 5,
         margin: 20,
-        textAlign: 'center'
+        textAlign: 'center',
+        overflow: 'visible',
     },
   });
   

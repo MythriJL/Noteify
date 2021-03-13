@@ -6,8 +6,10 @@ const Answer = ({route, navigation}) =>{
     return (
         <>
            <SafeAreaView style={styles.container}>
-               <Text>Que {JSON.stringify(que.text)}</Text>
-               <Text>ans {JSON.stringify(ans)}</Text>
+               <Text style={{marginTop:80, marginLeft:20, fontWeight: 'bold', textAlign:'left', fontSize:20}}>Question</Text>
+               <Text style={styles.queStyle}>{JSON.parse(JSON.stringify(que.text, null, 2))}</Text>
+               <Text style={{marginTop:50,  marginLeft:20, fontWeight: 'bold', textAlign:'left', fontSize:20}}>Answer</Text>
+               <Text style={styles.ansStyle}>{JSON.stringify(ans)}</Text>
            </SafeAreaView>
         </>
     );
@@ -16,9 +18,22 @@ const Answer = ({route, navigation}) =>{
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
+      backgroundColor: '#dddddd',
+    //   alignItems: 'center',
+    //   justifyContent: 'center',
     },
+    queStyle: {
+        borderWidth: 1,
+        borderRadius: 10,
+        marginTop: 10,
+        margin: 30,
+        width:300,
+        textAlign:'center',
+        fontSize: 17,
+
+    },
+    ansStyle:{
+        textAlign:'center',
+    }
   });
   export default Answer;

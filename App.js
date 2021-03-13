@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
-import Home from './screens/home/index';
+import Splash from './screens/splash/index';
 import Question from './screens/question/index'
 import Upload from './screens/upload/index';
 import Answer  from './screens/answer/index';
@@ -20,10 +20,10 @@ export default function App() {
     <NavigationContainer >
       <Stack.Navigator screenOptions={{headerShown: false}}>
       
-      {/* <Stack.Screen
-          name="Home"
-          component={Home}
-        /> */}
+      <Stack.Screen
+          name="Splash"
+          component={Splash}
+        />
         <Stack.Screen
           name="Upload"
           component={Upload}

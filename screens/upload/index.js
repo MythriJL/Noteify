@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     selectDoc:{
-        color:'#000',
+        color:'#001',
     },
 });

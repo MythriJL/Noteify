@@ -8,7 +8,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './screens/home/index';
 import Question from './screens/question/index'
 import Upload from './screens/upload/index';
-
+import Answer  from './screens/answer/index';
 
 const Stack = createStackNavigator();
 export default function App() {
@@ -33,6 +33,9 @@ export default function App() {
           name="Question"
           component={Question}
         />
+        <Stack.Screen 
+        name="Answer"
+        component={Answer}/>
         
       </Stack.Navigator>
     </NavigationContainer>

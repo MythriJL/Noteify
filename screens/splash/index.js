@@ -11,7 +11,7 @@ const Home = ({navigation}) =>{
     return (
         <>
            <SafeAreaView style={styles.container}>
-               <Text style={{color: 'white', fontWeight:'bold', fontSize:50, fontStyle:'italic'}}>NOTIFY</Text>
+               <Text style={{color: 'white', fontWeight:'bold', fontSize:50, fontStyle:'italic'}}>NOTEiFY</Text>
            </SafeAreaView>
         </>
     );

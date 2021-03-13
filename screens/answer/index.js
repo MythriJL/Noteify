@@ -7,9 +7,9 @@ const Answer = ({route, navigation}) =>{
         <>
            <SafeAreaView style={styles.container}>
                <Text style={{marginTop:80, marginLeft:20, fontWeight: 'bold', textAlign:'left', fontSize:20}}>Question</Text>
-               <Text style={styles.queStyle}>{JSON.parse(JSON.stringify(que.text, null, 2))}</Text>
+               <Text style={styles.queStyle}>{JSON.parse(JSON.stringify(que.text))}</Text>
                <Text style={{marginTop:50,  marginLeft:20, fontWeight: 'bold', textAlign:'left', fontSize:20}}>Answer</Text>
-               <Text style={styles.ansStyle}>{JSON.stringify(ans)}</Text>
+               <Text style={styles.ansStyle}>{JSON.parse(JSON.stringify(ans))}</Text>
            </SafeAreaView>
         </>
     );

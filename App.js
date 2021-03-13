@@ -20,19 +20,20 @@ export default function App() {
     <NavigationContainer >
       <Stack.Navigator screenOptions={{headerShown: false}}>
       
-      <Stack.Screen
+      {/* <Stack.Screen
           name="Home"
           component={Home}
-        />
-        <Stack.Screen
-          name="Question"
-          component={Question}
-        />
+        /> */}
         <Stack.Screen
           name="Upload"
           component={Upload}
         />
 
+        <Stack.Screen
+          name="Question"
+          component={Question}
+        />
+        
       </Stack.Navigator>
     </NavigationContainer>
     </>

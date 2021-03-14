@@ -10,7 +10,7 @@ const Question = ({navigation}) =>{
                <TextInput style={styles.tInput} multiline={true} placeholder={'Enter the Question'}  autoCorrect={true}  onChangeText={text => setText(text)}></TextInput>
                <Button color={'#30475e'}
                         title="Submit"
-                        onPress={()=>navigation.navigate('Answer', {que: {text}, ans: "tanda tanda daa"})} 
+                        onPress={()=>navigation.navigate('Result', {que: {text}, ans: "tanda tanda daa"})} 
                     />
            </SafeAreaView>
         </>

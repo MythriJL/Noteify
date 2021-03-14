@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -19,7 +19,7 @@ export default function App() {
     {/* this is a router, it helps in easy navigation */}
     <NavigationContainer >
       <Stack.Navigator screenOptions={{headerShown: false}}>
-      
+     
       <Stack.Screen
           name="Splash"
           component={Splash}
@@ -32,10 +32,13 @@ export default function App() {
         <Stack.Screen
           name="Question"
           component={Question}
+          
         />
         <Stack.Screen 
-        name="Answer"
-        component={Answer}/>
+        name="Result"
+        component={Answer}
+        options={{headerShown: true}}
+        />
         
       </Stack.Navigator>
     </NavigationContainer>
